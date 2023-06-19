@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <title>Pagina Copia</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            height: auto;
+        }
+        
+        header {
+            background-color: #e7d761;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        
+        .image {
+            position: relative;
+        }
+        
+        .image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+        
+        .image .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .image:hover .caption {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galería de Imágenes</h1>
+    </header>
+    
+    <div class="gallery">
+        <div class="image">
+            <img src="https://img.freepik.com/foto-gratis/al-atardecer-playa-tropical-mar-palmera-coco_74190-1075.jpg?w=2000" alt="Imagen 1">
+            <div class="caption">
+                Foto de la playa al atardecer
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1628922673078-5006b5c9c1ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80" alt="Imagen 2">
+            <div class="caption">
+                Retrato de una flor en primer plano
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="https://img.freepik.com/fotos-premium/paisaje-montanoso_102332-4133.jpg" alt="Imagen 3">
+            <div class="caption">
+                Imagen del paisaje montañoso
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="https://img.freepik.com/fotos-premium/iconico-puente-golden-gate-san-francisco-amanecer-noroeste_501731-5156.jpg?w=2000" alt="Imagen 4">
+            <div class="caption">
+                Fotografía de un puente icónico
+            </div>
+        </div>
+        
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeR_zriKyJNBZRh2_GYEL5f9YIU284k08LrAQ5QJXaPw6bc1rNaJgKWkR1wYA7wWR3MH0&usqp=CAU" alt="Imagen 5">
+            <div class="caption">
+                Detalle de una obra de arte en exhibición.
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/a1/8e/2a/magnificent-monument.jpg" alt="Imagen 6">
+            <div class="caption">
+                Imagen de un monumento histórico
+            </div>
+        </div>
+        
+        <div class="image">
+            <img src="https://foodandtravel.mx/wp-content/uploads/2021/01/Animales-salvajes-lince-iberico-2.jpg" alt="Imagen 6">
+            <div class="caption">
+                Imagen de un animal salvaje en su hábitat natural
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="https://us.123rf.com/450wm/smuki/smuki1610/smuki161000025/66402492-paisaje-dram%C3%A1tico-atardecer-y-amanecer-cielo-con-una-silueta-de-%C3%A1rboles.jpg" alt="Imagen 6">
+            <div class="caption">
+                Instantánea de un amanecer o atardecer pintoresco
+            </div>
+        </div>
+
+    </div>
+
+    <div style="text-align: start; margin-top: 80px;">Realizado con mucho ❤️ por Evelin Ramos</div>
+</body>
+</html>
